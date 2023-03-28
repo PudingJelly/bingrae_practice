@@ -1,0 +1,197 @@
+@import url(/fonts/BINGGRAE.TTF);
+@import url(/fonts/BINGGRAE-BOLD.TTF);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins&display=swap');
+
+@font-face {
+    src: url("../fonts/BINGGRAE.TTF");
+    font-family: 'Binggrae';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Binggrae-Bold';
+    src: url("../fonts/BINGGRAE-BOLD.TTF") format('woff');
+    /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ** 폰트 ** */
+.en {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    letter-spacing: normal !important;
+    /* font-weight: 300; */
+}
+
+.ko {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#Binggrae_font {
+    font-family: "Binggrae";
+}
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+/* common style */
+* {
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-style: normal;
+    color: #1f1f1f;
+    ;
+    letter-spacing: -0.09em;
+    padding: 0;
+    margin: 0;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.wrap {
+    position: relative;
+}
+
+/* header style */
+header {
+    width: 100%;
+    position: fixed;
+}
+
+header .header-top {
+    width: 100%;
+    padding: 0 80px;
+    line-height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+header .header-top ul {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .header-top ul li {
+    margin-right: 10px;
+    position: relative;
+}
+
+/* header .header-top ul span::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background: black;
+    border-right: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%,-50%);
+} */
+
+header .header-top a img {
+    margin-left: 5px;
+}
+
+header .header-container {
+    /* background: red; */
+    height: 100px;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-container h1 {
+    width: 10%;
+    justify-content: flex-start;
+}
+
+header .header-container ul {
+    width: 80%;
+    display: flex;
+}
+
+header .header-container ul li {
+    width: 16.5%;
+}
+
+/* content-wrapper style */
+.content-wrapper {
+    /* background: red; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 200px 0 140px;
+}
+.content-wrapper .title {
+    /* background: yellow; */
+    padding: 20px 0;
+}
+.content-wrapper .title nav {
+    /* background: greenyellow; */
+}
+.content-wrapper .title nav ul {
+    list-style: none;
+}
+.content-wrapper .title nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+    margin: 0 3px;
+}
+.content-wrapper .title nav ul .arrow {
+    width: 0;
+}
+.content-wrapper .title nav ul li img {
+    width: 10px;
+}
+.content-wrapper .title nav ul li img.home {
+    width: 20px;
+}
+.content-wrapper .main-title {
+    /* background: red; */
+    margin: 20px 0;
+}
+.content-wrapper .main-title {
+    font-family: 'Binggrae-Bold';
+    font-size: 70px;
+}
+
+/* tab-wrap style */
+.content-wrapper .tab-wrap {
+    /* background: gray; */
+    padding: 50px 0;
+}
+.content-wrapper .tab-wrap .tab-list {
+    margin-left: 10px;
+    display: flex;
+}
+
+
+/* sub-title-wrap style */
+
+.content-wrapper .sub-title-wrap {
+    background: orange;
+}
