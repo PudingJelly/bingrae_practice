@@ -1,65 +1,94 @@
-
-
 .wrap {
-    width: 80%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.main-wrap {
+    width: 100%;
     position: relative;
     margin: 0 auto;
+    justify-content: center;
+    /* z-index: -1; */
 }
+
 
 /* content-wrapper style */
 .content-wrapper {
     /* background: red; */
-    width: 100%;
+    width: 95%;
     max-width: 1310px;
     margin: 0 auto;
     padding: 200px 0 140px;
 }
-.content-wrapper .title {
-    /* background: yellow; */
-    padding: 20px 0;
-    margin-left: 100px;
+
+/* main_top style */
+.content-wrapper .main_top ul .title_btn {
+    opacity: 0.4;
+    position: relative;
+    padding-right: 12px;
+    z-index: -1;
 }
-.content-wrapper .title nav {
-    z-index: 0;
+
+.content-wrapper .main_top ul .title_btn img {
+    vertical-align: 0;
 }
-.content-wrapper .title nav ul {
-    list-style: none;
+
+.content-wrapper .main_top .main_title_wr .inb .title_btn.home a {
+    font-size: 0;
+    text-indent: -9999px;
 }
-.content-wrapper .title nav ul li {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.7;
-    margin: 0 3px;
+
+.content-wrapper .main_top .main_title_wr .inb .title_btn a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    color: #1f1f1f;
 }
-.content-wrapper .title nav ul .arrow {
-    width: 0;
+
+.content-wrapper .main_top ul .title_btn+.title_btn {
+    padding-left: 12px;
 }
-.content-wrapper .title nav ul li img {
-    
+
+.content-wrapper .main_top ul .title_btn+.title_btn::before {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    background: url("../img/btn_icon_brec_arrow.png") no-repeat center;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
 }
-.content-wrapper .title nav ul li img.home {
-    /* width: 20px; */
+
+.content-wrapper .main_top ul li {
+    padding: 10px;
 }
-.content-wrapper .main-title {
-    /* background: red; */
-    margin: 20px 0;
+
+.content-wrapper .main_top ul li a {
+    font-size: 14px;
+    font-weight: 500;
 }
-.content-wrapper .main-title h3 {
-    font-family: 'Binggrae-Bold';
-    font-size: 200px;
-    margin-left: 100px;
+
+.content-wrapper .main_top .title {
+    font-size: 58px;
+    font-weight: normal;
+    margin-top: 15px;
+    line-height: 1;
+    letter-spacing: -2.9px;
 }
 
 /* tab-wrap style */
 .content-wrapper .tab-wrap {
     /* background: gray; */
-    padding: 50px 0;
+    margin-top: 45px;
+    overflow-x: auto;
 }
 .content-wrapper .tab-wrap .tab-list {
     /* background: green; */
     margin-left: 10px;
     display: flex;
+    white-space: nowrap;
 }
 .content-wrapper .tab-wrap .tab-list .tab-cont {
     font-family: Poppins;
@@ -76,17 +105,22 @@
 
 }.content-wrapper .tab-wrap .tab-list .tab-cont:hover,
 .content-wrapper .tab-wrap .tab-list .tab-cont.act {
-    background: red;    
+    background: red;  
+    transition: none;  
 }
+
 .content-wrapper .tab-wrap .tab-list .tab-cont a {
     font-size: 20px;
     font-weight: 500;
     padding: 0 60px;
     line-height: 45px;
 }
+
 .content-wrapper .tab-wrap .tab-list .tab-cont.act a,
+.content-wrapper .tab-wrap .tab-list .tab-cont a:hover,
 .content-wrapper .tab-wrap .tab-list .tab-cont:hover {
     color: white;
+    transition: none;
 }
 
 /* sub-title-wrap style */
@@ -164,7 +198,8 @@
 .cont-wrap .sec2 .sec2-box .cont-inner {
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;    
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cont-wrap .sec2 .sec2-box .cont-inner:first-child {
     margin-bottom: 20px;
@@ -176,14 +211,14 @@
     justify-content: center;
 }
 .cont-wrap .sec2 .sec2-box .cont-inner .cont .imgbox {
-    width: 190px;
-    height: 190px;
+    width: 100%;
     background: #f9f9f9;
     border-radius: 30px;
     padding: 60px 50px;    
     margin:0 auto;
     justify-content: center;   
-}      
+}   
+   
 .cont-wrap .sec2 .sec2-box .cont-inner .cont img {
     justify-content: center;
     margin: 0 auto;    
@@ -217,7 +252,7 @@
 }
 .cont-wrap .sec3 .sec3-box .a-box {
     background: #eef8fb;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
     border-radius: 30px;
     width: 80%;
     padding: 40px 0;
@@ -246,3 +281,4 @@
     font-size: 18px;
     line-height: 2;
 }
+
